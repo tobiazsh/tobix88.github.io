@@ -1,9 +1,12 @@
-import Image from "next/image";
 import styles from "./page.module.css";
+import { redirect } from "next/navigation";
 
 export default function Home() {
+
+  redirect("https://tobias-s.vercel.app/");
+
   return (
-    <main>
+    <main className={styles.main}>
       REDIRECTING...
     </main>
   );
